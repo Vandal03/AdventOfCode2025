@@ -42,10 +42,6 @@ class JoltageFinder():
 
 
 
-
-
-
-
 if __name__ == "__main__":
     jf = JoltageFinder()
     jf.find_joltage() 
