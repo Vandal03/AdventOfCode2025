@@ -3,7 +3,7 @@ class JoltageFinder():
     def __init__(self):
         
         self.joltages = []
-        with open("AdventOfCode2025\Day 3\joltage.txt") as content:
+        with open("AdventOfCode2025/Day3/joltage.txt") as content:
             self.batteryBanks = content.readlines()
 
 
@@ -29,7 +29,7 @@ class JoltageFinder():
         index = 0
         joltageArrayLength = len(self.joltageArray)
         for value in self.joltageArray:
-            #check length of array vs what's remaining in battery values
+            #Work on first if statement
             if joltageArrayLength % self.batteryRemaining == 0:
                 self.joltageArray.append(num)
                 break
